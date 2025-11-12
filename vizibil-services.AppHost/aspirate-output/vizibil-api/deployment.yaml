@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vizibil-api
+  labels:
+    app: vizibil-api
+spec:
+  minReadySeconds: 60
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vizibil-api
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: vizibil-api
+    spec:
+      containers:
+      - name: vizibil-api
+        image: 194.164.72.219:32000/vizibil-api:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 8080
+        - name: https
+          containerPort: 8443
+        envFrom:
+        - configMapRef:
+            name: vizibil-api-env
+        - secretRef:
+            name: vizibil-api-secrets
+      terminationGracePeriodSeconds: 180

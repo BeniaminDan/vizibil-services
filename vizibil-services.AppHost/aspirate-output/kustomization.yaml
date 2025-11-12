@@ -1,0 +1,14 @@
+namespace: vizibil
+
+resources:
+- postgres
+- messaging
+- vizibil-api
+- vizibil-email
+- namespace.yaml
+- dashboard.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+

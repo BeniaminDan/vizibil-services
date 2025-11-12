@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vizibil-email
+  labels:
+    app: vizibil-email
+spec:
+  minReadySeconds: 60
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vizibil-email
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: vizibil-email
+    spec:
+      containers:
+      - name: vizibil-email
+        image: 194.164.72.219:32000/vizibil-email:latest
+        imagePullPolicy: IfNotPresent
+        envFrom:
+        - configMapRef:
+            name: vizibil-email-env
+        - secretRef:
+            name: vizibil-email-secrets
+      terminationGracePeriodSeconds: 180

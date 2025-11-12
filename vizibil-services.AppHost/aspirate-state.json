@@ -1,0 +1,44 @@
+{
+  "projectPath": ".",
+  "inputPath": "aspirate-output",
+  "outputPath": "aspirate-output",
+  "namespace": "vizibil",
+  "containerRegistry": "194.164.72.219:32000",
+  "containerImageTags": [
+    "latest"
+  ],
+  "containerBuilder": "docker",
+  "kubeContext": "docker-desktop",
+  "outputFormat": "kustomize",
+  "skipFinalKustomizeGeneration": false,
+  "privateRegistryEmail": "aspir8@aka.ms",
+  "useCustomNamespace": true,
+  "secrets": {
+    "salt": "A1mfRFRmdQt6YPjJ",
+    "hash": "6QFUbcTIag5BT7ziPbb1xVqt3DSsJ43MwNMsywO/QWE=",
+    "secrets": {
+      "messaging-password": {
+        "value": "A1mfRFRmdQt6YPjJtN6Qrng2WqardqNInBERRA2gHYaFYK2Cz1Q11OwvAX/qyKn0Rf8="
+      },
+      "DBUser": {
+        "value": "A1mfRFRmdQt6YPjJuLmFH9E7f0adhr/3DzHit0/hP5I="
+      },
+      "DBPassword": {
+        "value": "A1mfRFRmdQt6YPjJllUI6Q32jiov1eQn/3G4xUrzKZOYZoiH"
+      },
+      "postgres": {
+        "POSTGRES_PASSWORD": "A1mfRFRmdQt6YPjJllUI6Q32jiov1eQn/3G4xUrzKZOYZoiH"
+      },
+      "vizibil": {},
+      "messaging": {},
+      "vizibil-api": {
+        "ConnectionStrings__vizibil": "A1mfRFRmdQt6YPjJaKfjNrmXHfSxIBbPgAVKtnL9KZTSeZWQ4mN1wKxCEijP662qIfglTOvzxWURh\u002BpPNQOZLgt6geM6cLCY3Zn6jadS18tcG7RltIoIcFfXwlJ5kNvGpLqdzg==",
+        "ConnectionStrings__messaging": "A1mfRFRmdQt6YPjJzH\u002BqUJ\u002Be3dET6sQzJWc8\u002B1v/K5DVJtWE42F00eVOcADb9fnIdJJHRc\u002Bz9lRHsdATYybeCxQkovEoZK6ZyMfyy/ET"
+      },
+      "vizibil-email": {
+        "ConnectionStrings__messaging": "A1mfRFRmdQt6YPjJzH\u002BqUJ\u002Be3dET6sQzJWc8\u002B1v/K5DVJtWE42F00eVOcADb9fnIdJJHRc\u002Bz9lRHsdATYybeCxQkovEoZK6ZyMfyy/ET"
+      }
+    }
+  },
+  "processAllComponents": true
+}

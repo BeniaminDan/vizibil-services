@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vizibil-services.AppHost", "vizibil-services.AppHost\vizibil-services.AppHost.csproj", "{93AB81F3-40F0-40D2-8A11-7A7AC94ABB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vizibil-services.ApiService", "vizibil-services.ApiService\vizibil-services.ApiService.csproj", "{C81D10B0-0248-48E5-A269-B9F4515A9795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vizibil-services.ServiceDefaults", "vizibil-services.ServiceDefaults\vizibil-services.ServiceDefaults.csproj", "{A6D9CC12-F178-47B6-BFBF-38ABABFDD33D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vizibil-services.EmailService", "vizibil-services.EmailService\vizibil-services.EmailService.csproj", "{5315A51C-E73B-4DF7-B554-3B0BFC59396B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93AB81F3-40F0-40D2-8A11-7A7AC94ABB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93AB81F3-40F0-40D2-8A11-7A7AC94ABB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93AB81F3-40F0-40D2-8A11-7A7AC94ABB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93AB81F3-40F0-40D2-8A11-7A7AC94ABB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81D10B0-0248-48E5-A269-B9F4515A9795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81D10B0-0248-48E5-A269-B9F4515A9795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81D10B0-0248-48E5-A269-B9F4515A9795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81D10B0-0248-48E5-A269-B9F4515A9795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D9CC12-F178-47B6-BFBF-38ABABFDD33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D9CC12-F178-47B6-BFBF-38ABABFDD33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D9CC12-F178-47B6-BFBF-38ABABFDD33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D9CC12-F178-47B6-BFBF-38ABABFDD33D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5315A51C-E73B-4DF7-B554-3B0BFC59396B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5315A51C-E73B-4DF7-B554-3B0BFC59396B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5315A51C-E73B-4DF7-B554-3B0BFC59396B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5315A51C-E73B-4DF7-B554-3B0BFC59396B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+{
+  "TemplatePath": null,
+  "ContainerSettings": {
+    "Registry": "194.164.72.219:32000",
+    "RepositoryPrefix": null,
+    "Tags": [
+      "latest"
+    ],
+    "Builder": "docker",
+    "BuildArgs": null,
+    "Context": null
+  }
+}

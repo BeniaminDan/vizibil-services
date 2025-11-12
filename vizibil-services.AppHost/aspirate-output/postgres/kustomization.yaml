@@ -1,0 +1,19 @@
+resources:
+- statefulset.yaml
+- service.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+- name: postgres-env
+  literals:
+    - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+    - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256 --auth-local=scram-sha-256
+    - POSTGRES_USER=user
+    - POSTGRES_DB=vizibil
+
+secretGenerator:
+- name: postgres-secrets
+  envs:
+  - .postgres.secrets
