@@ -21,7 +21,7 @@ spec:
       containers:
       - name: vizibil-email
         image: 194.164.72.219:32000/vizibil-email:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         envFrom:
         - configMapRef:
             name: vizibil-email-env

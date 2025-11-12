@@ -7,11 +7,13 @@
   "containerImageTags": [
     "latest"
   ],
+  "imagePullPolicy": "Always",
   "containerBuilder": "docker",
-  "kubeContext": "docker-desktop",
+  "kubeContext": "microk8s",
   "outputFormat": "kustomize",
   "skipFinalKustomizeGeneration": false,
   "privateRegistryEmail": "aspir8@aka.ms",
+  "includeDashboard": false,
   "useCustomNamespace": true,
   "secrets": {
     "salt": "A1mfRFRmdQt6YPjJ",
